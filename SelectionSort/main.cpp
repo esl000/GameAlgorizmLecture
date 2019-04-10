@@ -2,6 +2,7 @@
 #include "cSelectionSort.h"
 #include "cBubbleSort.h"
 #include "cInsertionSort.h"
+#include "cMergeSort.h"
 
 
 
@@ -44,7 +45,13 @@ void main()
 		data[i] = rand() % 100;
 	}
 
-	cInsertionSort sort(10);
+	//cInsertionSort sort(10);
+	//sort.InitData(data);
+	//sort.PrintData();
+	//sort.Sorting();
+	//sort.PrintData();
+
+	cMergeSort sort(10);
 	sort.InitData(data);
 	sort.PrintData();
 	sort.Sorting();
