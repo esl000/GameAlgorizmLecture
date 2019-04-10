@@ -5,7 +5,7 @@ void cBubbleSort::Sorting()
 {
 	bool isSorted = false;
 
-	for (int pass = 1; (pass < m_dataSize) && (!isSorted); ++pass)
+	for (int pass = 1; pass < m_dataSize && !isSorted; ++pass)
 	{
 		isSorted = true;
 
