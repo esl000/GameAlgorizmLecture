@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{B839E3B2-A7A5-4E13-B261-808165477A99}</ProjectGuid>
-    <RootNamespace>SelectionSort</RootNamespace>
+    <ProjectGuid>{CCA06852-83BD-4EAD-AD2F-D77937E4BEB6}</ProjectGuid>
+    <RootNamespace>TemplatePractice</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -88,9 +88,6 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
-    <Link>
-      <SubSystem>Console</SubSystem>
-    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -121,22 +118,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="cBubbleSort.cpp" />
-    <ClCompile Include="cInsertionSort.cpp" />
-    <ClCompile Include="cMergeSort.cpp" />
-    <ClCompile Include="cQuickSort.cpp" />
-    <ClCompile Include="cSelectionSort.cpp" />
-    <ClCompile Include="cSort.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="cBubbleSort.h" />
-    <ClInclude Include="cInsertionSort.h" />
-    <ClInclude Include="cMergeSort.h" />
-    <ClInclude Include="cQuickSort.h" />
-    <ClInclude Include="cSelectionSort.h" />
-    <ClInclude Include="cSort.h" />
-    <ClInclude Include="SortUtil.h" />
+    <ClInclude Include="Queue.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Queue.inl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

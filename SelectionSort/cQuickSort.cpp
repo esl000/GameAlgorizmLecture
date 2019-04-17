@@ -1,5 +1,6 @@
 #include "cQuickSort.h"
 #include <stack>
+#include "SortUtil.h"
 
 struct st_QuickSortCallStackData
 {
@@ -13,21 +14,22 @@ public:
 
 int cQuickSort::Partition(int low, int high)
 {
-	int j = low, pivotItem = m_data[low], temp;
+	int j = low, pivotItem = m_data[low];
 
 	for (int i = low + 1; i <= high; ++i)
 	{
-		if (m_data[i] < pivotItem)
+		if (m_data[i] < pivotItem )
 		{
 			j++;
-			temp = m_data[j];
-			m_data[j] = m_data[i];
-			m_data[i] = temp;
+			if (i != j)
+			{
+				Swap<int>(m_data, i, j);
+			}
 		}
 	}
-
-	m_data[low] = m_data[j];
-	m_data[j] = pivotItem;
+	Swap<int>(m_data, low, j);
+	//m_data[low] = m_data[j];
+	//m_data[j] = pivotItem;
 	return j;
 }
 
