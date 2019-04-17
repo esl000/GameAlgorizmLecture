@@ -33,6 +33,9 @@
     <ClCompile Include="cMergeSort.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="cQuickSort.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="cSelectionSort.h">
@@ -48,6 +51,9 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="cMergeSort.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="cQuickSort.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
